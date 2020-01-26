@@ -1,0 +1,21 @@
+footer {
+  background-color: #999999;
+  overflow: hidden;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 3vh;
+}
+
+.linkedin-logo img,
+.github-logo img {
+  margin: 2%;
+  height: 32px;
+}
+
+.github-logo {
+  padding: 2%;
+}
+
+img {
+  background: #999999;
+}

@@ -1,0 +1,30 @@
+.img-top-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.go-to-button {
+    position: absolute;
+    bottom: -50%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%; /* Need a specific value to work */
+    transition: linear .5s;
+    opacity: 1;
+}
+
+img {
+    transition: linear .3s;
+    overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    height: 100%;
+}
+
+.card:hover .go-to-button {
+    bottom: 10%;
+}

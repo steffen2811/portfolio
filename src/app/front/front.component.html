@@ -1,0 +1,23 @@
+
+  <div class="container front-top background">
+    <img src="/assets/front-background.jpg" alt="">
+    <div class="img-overlay"></div>
+    <div class="row front-text">
+      <div class="col mr-auto ml-auto text-center">
+        <div class="d-inline-block mr-auto ml-auto ">
+          <h2 class=" mt-5">Jeg er en webudvikler der</h2>
+          <br>
+          <h2 class="underline mb-5" [ngClass]="pulsingText" (animationend)="pulsingText.expand=false">{{selectedText}}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div *ngFor="let project of projects" class="col-md-4 col-12">
+          <app-project-card [project]="project"></app-project-card>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,33 @@
+.background {
+  background-color: #999999;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link span::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  height: 3px;
+  width: 0%;
+  left: 5%;
+  background-color: #336699;
+  transition: 0.5s ease all;
+}
+
+.nav-link:hover span::after {
+  width: 90%;
+  transition: 0.3s ease all;
+}
+
+.router-link-active.nav-link:not(:hover) span::after {
+  width: 90%;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-link span::after {
+    left: 0%;
+  }
+}
